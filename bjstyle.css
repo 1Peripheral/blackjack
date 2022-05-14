@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'JetBrains';
+    src: url('/fonts/JetBrainsMono-Medium.ttf');
+}
+
+* {
+    font-family: 'JetBrains'; 
+}
+
+body {
+    text-align: center;
+    background-color: #131414;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 2px;
+}
+
+#player-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 2px;   
+}
+
+#hit, #stand, #reload {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    position: relative;
+    background-color:rgb(113, 230, 161); 
+    border: 0;   
+    transition: 0.2s ease-in-out; 
+}
+
+#hit:hover, #stand:hover, #reload:hover {
+    opacity: 0.8;
+}
+
+#reload {
+    margin-top: 2rem;
+    position: fixed center;
+}
+
+#results {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#player-cards img, #dealer-cards img {
+    animation: fadeIn 1s; 
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.buttons:disabled {
+    background-color: rgb(121, 135, 127);
+}
